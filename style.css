@@ -1,61 +1,85 @@
 body {
-    display: flex;
-    flex-direction: column;
+    background-color: black;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(87, 133, 133);
-}
-
-#myH1 {
-    font-size: 4rem;
-    
-}
-
-
-#container  {
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 5px solid;
-    border-radius: 20px;
-    padding: 30px;
-    background-color: aliceblue;
 }
 
+
+
+#calculator {
+    max-width: 500px;
+    overflow: hidden;
+    background-color: rgba(53, 19, 19, 0.37);
+    border-radius: 15px;
+}
 
 #display {
-    font-size: 4rem;
-    text-shadow: 2px 2px 2px red;
-    margin-bottom: 15px;
-
-}
-
-
-#controls button {
-    font-size: 2rem;
-    padding: 10px 20px;
-    margin: 5px;
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
     border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    color: rgb(250, 251, 252);
-    
+    color: black;
 }
 
-#startBtn {
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    font-size: 3rem;
+    border: none;
+}
+button:hover {
+     background-color: rgb(163, 85, 85);
+}
+
+button:active {
+     background-color: rgb(97, 32, 32);
+}
+
+
+.operate {
+    background-color: rgb(49, 67, 231);
+}
+.operate:hover {
+    background-color: rgb(95, 107, 218);
+}
+.operate:active {
+    background-color: rgb(56, 70, 196);
+}
+
+.result {
     background-color: green;
 }
-#startBtn:hover {
-    background-color: rgb(96, 160, 96);
+.result:hover {
+    background-color: rgb(131, 175, 131);
 }
-#stopBtn {
-    background-color: red;
+.result:active {
+    background-color: rgb(47, 121, 47);
 }
-#stopBtn:hover {
-    background-color: rgb(168, 94, 94);
+
+.clr {
+    background-color: rgb(32, 123, 126);
 }
-#resetBtn {
-    background-color: cyan;
+
+.clr:hover {
+    background-color: rgb(92, 134, 136);
 }
-#resetBtn:hover {
-    background-color: rgb(98, 165, 165);
+
+.clr:active {
+    background-color: rgb(35, 52, 53);
 }
